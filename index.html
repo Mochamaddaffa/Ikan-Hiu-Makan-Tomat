@@ -1,20 +1,109 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8" />
+    <title>Website Kelas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #f5f5f5;
+      }
+      header,
+      section,
+      footer {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      header h1,
+      footer h2 {
+        text-align: center;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .gallery img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .team-list {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      .team-list li {
+        padding: 5px 0;
+      }
+      .mermaid {
+        text-align: center;
+        margin: 20px 0;
+      }
+    </style>
+    <!-- Sertakan library Mermaid untuk flowchart -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
   </head>
   <body>
-    <h1>Ikan_Hiu_Makan_Tomat</h1>
+    <header>
+      <h1>Website Kelas</h1>
+    </header>
 
-    <ul>
+    <section>
+      <h2>Struktur Kelas</h2>
+      <!-- Flowchart Struktur Kelas menggunakan Mermaid -->
+      <div class="mermaid">
+        graph TD; A[Wali Kelas] --> B[Siswa 1]; A --> C[Siswa 2]; A --> D[Siswa
+        3]; A --> E[Siswa 4];
+      </div>
+    </section>
+
+    <section>
+      <h2>Gallery Kelas</h2>
+      <!-- Gallery Kelas menggunakan gambar placeholder -->
+      <div class="gallery">
+        <img
+          src="https://via.placeholder.com/150?text=Foto+1"
+          alt="Foto Kelas 1"
+        />
+        <img
+          src="https://via.placeholder.com/150?text=Foto+2"
+          alt="Foto Kelas 2"
+        />
+        <img
+          src="https://via.placeholder.com/150?text=Foto+3"
+          alt="Foto Kelas 3"
+        />
+        <img
+          src="https://via.placeholder.com/150?text=Foto+4"
+          alt="Foto Kelas 4"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <h2>Nama Kelompok</h2>
+      <ul class="team-list">
         <li>Mochamad Daffa Irvandiar Effendi</li>
-        <li>Rizky Ramadhani ganteng banget</li>
+        <li>Rizky Ramadhani</li>
         <li>Alexander Rotty</li>
         <li>Diwa Putra Pratama</li>
+<<<<<<< HEAD
     </ul>
     <button type="button" class="btn btn-prymary">Daftar</button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+=======
+      </ul>
+    </footer>
+>>>>>>> eb5f3d9 (Menyimpan perubahan sebelum pull)
   </body>
 </html>
